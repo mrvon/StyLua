@@ -289,8 +289,8 @@ pub fn create_table_braces(
         }
 
         TableType::SingleLine => ContainedSpan::new(
-            fmt_symbol!(ctx, start_brace, "{ ", shape),
-            fmt_symbol!(ctx, end_brace, " }", shape),
+            fmt_symbol!(ctx, start_brace, "{", shape),
+            fmt_symbol!(ctx, end_brace, "}", shape),
         ),
 
         TableType::Empty => {
